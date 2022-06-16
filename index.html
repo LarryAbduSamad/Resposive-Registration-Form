@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Registration Form</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="mainContainer">
+        <section class="textContainer">
+          <h2 class="mainHeading">Learn to code by watching others</h2>
+          <p class="subHeading">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers
+            thinkis invaluable
+          </p>
+        </section>
+
+        <section class="formContainer">
+          <div class="formTitle">
+            <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          </div>
+
+          <form class="form">
+            <div class="firstNameContainer">
+              <input
+                type="text"
+                placeholder="First Name"
+                id="firstName"
+              /><br />
+              <p id="errorMessageFirstName" class="displayNone">First Name cannot be empty</p>
+            </div>
+
+            <div class="lastNameContainer">
+              <input type="text" placeholder="Last Name" id="lastName" /><br />
+              <p id="errorMessageLastName" class="displayNone">Last Name cannot be empty</p>
+            </div>
+
+            <div class="emailContainer">
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="email"
+              /><br />
+              <p id="errorMessageEmail" class="displayNone">Looks like this is not an email</p>
+            </div>
+
+            <div class="passwordContainer">
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+              /><br />
+              <p id="errorMessagePassword" class="displayNone">Password cannot be empty</p>
+            </div>
+            <div class="termsAndServices">
+              <button id="button">CLAIM YOUR FREE TRIAL</button>
+              <p>By clicking the button you are agreeing to our
+                <strong>Terms and Services</strong>
+              </p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
