@@ -7,6 +7,8 @@ const errorMessageFirstName = document.getElementById("errorMessageFirstName");
 const errorMessageLastName = document.getElementById("errorMessageLastName");
 const errorMessageEmail = document.getElementById("errorMessageEmail");
 const errorMessagePassword = document.getElementById("errorMessagePassword");
+const preventDefault = document.getElementById("preventDefault");
+
 
 
 button.addEventListener('click', function() {
@@ -56,3 +58,7 @@ button.addEventListener('click', function() {
         password.style.background = 'none'
     }
 })
+
+preventDefault.addEventListener("click", function(event){
+    event.preventDefault()
+  });
